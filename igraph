@@ -1,0 +1,4 @@
+tweet_geo_complete = data.table(tweet_geo_complete)
+edge_list = tweet_geo_complete[complete.cases(tweet_geo_complete$in_reply_to_status_id_str),.(id_str,in_reply_to_status_id_str)]
+
+
