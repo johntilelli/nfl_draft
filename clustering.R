@@ -25,7 +25,7 @@ tweet_coords = unique(tweet_coords)
 
 setwd("/Users/Magic/Documents/UW/Methods/Project")
 #write.csv(tweet_coords, "tweet_coords.csv", row.names = FALSE)
-tweet_coords = read.csv("tweet_coords.csv", header = TRUE, stringsAsFactors = FALSE)
+tweet_coords = read.csv("https://raw.githubusercontent.com/johntilelli/nfl_draft/master/tweet_coords.csv", header = TRUE, stringsAsFactors = FALSE)
 
 # Complete Randomness
 x_rand = runif(200)
@@ -74,4 +74,5 @@ lines(cluster_ripleyK$r, cluster_ripleyK$iso, lwd=2, col="red")
 lines(rand_ripleyK$r, rand_ripleyK$iso, lwd=2, lty=1)
 lines(reg_ripleyK$r, reg_ripleyK$iso, lwd=2, col="blue")
 lines(rand_ripleyK$r, rand_ripleyK$theo, lwd=2, lty=8, col="green")
+
 
